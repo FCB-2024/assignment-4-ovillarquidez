@@ -1,23 +1,23 @@
 ## ADD WHATEVER ARGUMENTS ARE NECESSARY TO THE MAIN FUNCTION
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
-def main(x) :
+def main(x):
 	## YOU CODE SHOULD START HERE AST THE SAME
 	## IDENTATION AS THIS COMMENT
-
-	i = int ("1")
-	r = int ("0")
+	
+	i = int("1")
+	u = int("0")
 	while i <= x:
 		if x % i == 0:
-			r = r + int ("1")
-		i = i + int ("1")
+			u = u + int("1")
+		i = i + int("1")
 
-	s = int("0")
+	t = int("0")
 	p = x - int("1")
 
-	while p >= int ("1") and s < r:
-		f = int ("1")
-		s = int ("0")
+	while p >= int("1") and t < u:
+		f = int("1")
+		t = int("0")
 		while f <= p:
 			if p % f == 0:
 				s = s + int("1")
@@ -30,11 +30,11 @@ def main(x) :
 	## OF CODE ALLOW THIS FUNCTION TO RETURN THE VALUE
 	## "anti-prime" or "not anti-prime"
 
-	if s >= r:
-		res = ("not anti-prime")
+	if s >= u:
+		res=("not anti-prime")
 	else: 
-		res = ("anti-prime")
-	return (res)
+		res=("anti-prime")
+	return(res)
 
 ## DO NOT REMOVE THIS LINE BELOW
 if __name__ == "__main__" :
@@ -45,5 +45,5 @@ if __name__ == "__main__" :
 	## WHERE THE FIRST ARGUMENT IS A POSITIVE INTEGER NUMBER FOR WHICH
 	## YOU WANT TO FIGURE OUT WHETHER IS ANTI-PRIME OR NOT
 	import sys
-	x = int (sys.argv [1])
+	x = int(sys.argv[1]) 
 	print(main(x))
