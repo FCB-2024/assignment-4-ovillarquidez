@@ -15,6 +15,7 @@ def main(x) :
 		if (x % i == 0):
 			sum1 = sum1 + 1
 		i = i + 1
+
 	while (s <= x-1):
 		while (t <= s):
 			if (s % t == 0):
@@ -26,6 +27,7 @@ def main(x) :
 			s = s + 1
 			t = 1
 			sum2 = 0
+	
 	if (sum1 > sum2):
 		return ("anti-prime")
 	## THE LAST LINES OF YOUR CODE SHOULD EITHER
@@ -38,7 +40,7 @@ def main(x) :
 if __name__ == "__main__" :
 	#print(x)
 	x = int(sys.argv[1])
-	
+
 	## MODIFY THE LINE BELOW AND ADD BEFORE WHATEVER LINES ARE NECESSARY
 	## TO RUN THIS PROGRAM AS, FOR INSTANCE:
 	## $ python antiprime.py 6
