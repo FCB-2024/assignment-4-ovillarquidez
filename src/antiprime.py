@@ -33,10 +33,12 @@ def main(x) :
 	## REPLACE THE FOLLOWING LINE BY WHATEVER LINES
 	## OF CODE ALLOW THIS FUNCTION TO RETURN THE VALUE
 	## "anti-prime" or "not anti-prime"
+
 ## DO NOT REMOVE THIS LINE BELOW
 if __name__ == "__main__" :
 	#print(x)
 	x = int(sys.argv[1])
+	
 	## MODIFY THE LINE BELOW AND ADD BEFORE WHATEVER LINES ARE NECESSARY
 	## TO RUN THIS PROGRAM AS, FOR INSTANCE:
 	## $ python antiprime.py 6
